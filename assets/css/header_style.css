@@ -1,16 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Skranji&display=swap');
 
 .cabecera {
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-content: stretch;
-    align-items: stretch;
-    font-family:'Courier New', Courier, monospace;
+    align-items: stretch;    
     font-size: 30px;
+    position: relative;
+    font-family: 'Skranji';    
 }
 
 header {
     background-color: #CAC9C9; 
+}
+
+h1{
+  font-family: 'Skranji', cursive;
+  font-weight: 600;
 }
 
 .cabecera img {
@@ -20,32 +27,32 @@ width: 180px;
 
 .prueba {
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-around;    
 }
 
 .prueba nav {
     margin-right: 10px;
+    position: absolute;
+    margin-top: 100px;
 }
 
-
-ul{
+ul {
     display: none;
   }
   
-input:checked  ~ ul{
+input:checked  ~ ul {
     display:block;
   }
 
- /* input {
+div nav input  {
     display: none;
-   } */
+   } 
 
 label {
     box-sizing: border-box;
     display: inline-block;
     border-radius: 5px;
-    width: 30px;
+    width: 0px;
     height: 30px;
     line-height: 30px;
     font-weight: bold;
@@ -62,10 +69,6 @@ li {
     border-bottom: 1px solid grey;
   }
 
-label:hover{
-    background: grey;
-  }
-
 input:checked ~ label {
     background: lightgrey; 
   }
@@ -76,7 +79,10 @@ ul{
     width: 200px;
   }
 
-
 li:hover {
     filter: brightness(110%);
+  }
+
+label:hover {
+    background: grey;
   }
