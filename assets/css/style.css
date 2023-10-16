@@ -1,17 +1,14 @@
 @import url(/assets/css/header_style.css);
 @import url(/assets/css/footer_style.css);
-
 .body {
     display: flex;
     justify-content: space-around;
     padding: 100px;
-    text-align: center;    
+    text-align: center;
 }
-
 h2 {
     margin-bottom: 50px;
 }
-
 #vertical {
     height:45vh;
     width:.1vw;
@@ -19,42 +16,33 @@ h2 {
     color:#000;
     background-color:#000
 }
-
 .body input {
     margin-bottom: 30px;
 }
-
-.account { 
+.account {
     margin-top: 30px;
     margin-right: 10px;
 }
-
 .account button {
     margin: 20px;
 }
-
 button {
     width: 500px;
     color: white;
     padding: 10px;
 }
-
 .create_account {
     background-color: black;
 }
-
 .button_facebook {
     background-color: #5B68C0;
 }
-
 .button_twitter {
     background-color: #5EA7FF;
-} 
-
-.button_login {
-    background-color: red;   
 }
-
+.button_login {
+    background-color: red;
+}
 a {
     text-decoration: none;
     text-decoration-color: none;

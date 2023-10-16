@@ -1,64 +1,52 @@
-@import url(header_style.css);
-@import url(footer_style.css);
-
+@import url(/assets/css/header_style.css);
+@import url(/assets/css/footer_style.css);
 .container {
     display: flex;
 }
-
     ul, li {
     margin: 0;
     padding: 0;
     list-style: none;
     }
-    
     div nav ul{
         margin:1px;
         padding: 0;
         width: 80px;
       }
-        
-    ol.banner {       
+    ol.banner {
         height: 120px;
     }
-    
     ol.banner li {
         position:absolute;
         opacity: 0;
         width: inherit;
         height: inherit;
         transition: opacity .0.5s;
-        display: inline-block;        
+        display: inline-block;
     }
-
     ol.banner li img {
         width: 1300px;
         height: 120px;
         object-fit: cover;
     }
-    
     ol.banner li:first-child {
         opacity: 1;
     }
-
     ol.banner li:target{
         opacity: 1;
         }
-
    button.banner button:target {
         opacity: 1;
         }
-
     .menu_banner {
         text-align: center;
         position: relative;
         top: -30px;
     }
-
     .menu_banner li {
         display: inline-block;
         text-align: center;
     }
-
     .menu_banner li a {
         display: inline-block;
         background-color: white;
@@ -66,23 +54,21 @@
         text-decoration: none;
         width: 20px;
         height: 20px;
-        border-radius: 50px;  
+        border-radius: 50px;
     }
-
 .banner {
-    overflow: hidden;    
+    overflow: hidden;
+    margin-left: 250px;
+    margin-right: 250px;
 }
-
 .banner img {
-    object-fit: cover;
+    object-fit: fill;
 }
-
 h3 {
     text-align: center;
     font-style: oblique;
     margin: 0;
 }
-
 .team_cards {
     display: flex;
     justify-content: space-around;
@@ -90,21 +76,18 @@ h3 {
     gap: 50px;
     justify-content: space-evenly;
 }
-
 .card {
-    border: black solid 1px;    
+    border: black solid 1px;
     color: white;
     border-radius: 0 12px 12px;
     background: none;
     text-align: center;
 }
-
 .text {
     background-color: black;
     padding: 30px 50px;
     border-radius: 0 0 12px 12px;
 }
-
 .card img {
     background-color: white;
     text-align: right;
@@ -112,46 +95,35 @@ h3 {
     height: 80px;
     padding: 20px 40px;
 }
-
 .avatar2 {
     display: none;
 }
-
 .card:hover img.avatar1 {
     display: none;
 }
-
 .card:hover img.avatar2 {
     display: inline;
     transition: 1.5s;
 }
-
 ol.team_cards > li {
     list-style: none;
-
 }
-
 ol.team_cards > li img {
     object-fit: cover;
 }
-
 .tools {
     display: flex;
     justify-content: center;
     padding: 25px;
 }
-
 .tools img{
     width: 500px;
-
 }
-
 .tools h3 {
     font-size: 22px;
     font-style: normal;
     padding-right: 50px;
 }
-
 a {
     text-decoration: none;
     text-decoration-color: none;
